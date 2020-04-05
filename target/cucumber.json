@@ -1,0 +1,273 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "start_timestamp": "2020-04-05T18:50:13.665Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12547668300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.start(Scenario)"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Valid Login",
+        "description": "",
+        "id": "login;valid-login",
+        "after": [
+          {
+            "result": {
+              "duration": 793700000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.end(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 100885300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I see company logo on login page",
+            "match": {
+              "location": "A001LoginPageSteps.i_see_company_logo_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 275022300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I enter valid username and password",
+            "match": {
+              "location": "A001LoginPageSteps.i_enter_valid_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1949076400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I click login button",
+            "match": {
+              "location": "A001LoginPageSteps.i_click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21600,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I successfully logged in",
+            "match": {
+              "location": "A001LoginPageSteps.i_successfully_logged_in()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sprint1"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-05T18:50:29.336Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11112806400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.start(Scenario)"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Invalid Login",
+        "description": "",
+        "id": "login;invalid-login",
+        "after": [
+          {
+            "result": {
+              "duration": 825170800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.end(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 276169100,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I enter invalid username and password",
+            "match": {
+              "location": "A001LoginPageSteps.i_enter_invalid_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 518382000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I click login button",
+            "match": {
+              "location": "A001LoginPageSteps.i_click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20300,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I see error message is displayed",
+            "match": {
+              "location": "A001LoginPageSteps.i_see_error_message_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sprint1"
+          },
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@negative"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-05T18:50:42.071Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11294981800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.start(Scenario)"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Error message validation",
+        "description": "",
+        "id": "login;error-message-validation",
+        "after": [
+          {
+            "result": {
+              "duration": 738895000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.end(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1749400,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I enter invalid username and password I see errorMessage",
+            "match": {
+              "location": "A001LoginPageSteps.i_enter_invalid_username_and_password_I_see_errorMessage(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "UserName",
+                  "Password",
+                  "ErrorMessage"
+                ]
+              },
+              {
+                "cells": [
+                  "Admin",
+                  "Admin123",
+                  "Invalid Credentials"
+                ]
+              },
+              {
+                "cells": [
+                  "Admin1",
+                  "Syntax123!",
+                  "errorMessage"
+                ]
+              }
+            ],
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sprint1"
+          },
+          {
+            "name": "@negative"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/A001login.feature",
+    "tags": [
+      {
+        "name": "@sprint1",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
